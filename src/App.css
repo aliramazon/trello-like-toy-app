@@ -1,33 +1,86 @@
-.App {
-  text-align: center;
+.container {
+  padding: 25px;
+  background-color: #eceeee;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 25px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.column {
+  display: grid;
+  grid-template-rows: max-content;
+  row-gap: 25px;
+  grid-auto-rows: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column__header {
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.column__header--winnie {
+  background-color: #8e6e95;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column__header--bob {
+  background-color: #39a59c;
+}
+
+.column__header--thomas {
+  background-color: #344759;
+}
+
+.column__header--george {
+  background-color: #e8741e;
+}
+
+.task {
+  background-color: burlywood;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: 25px 1fr 25px;
+  align-items: center;
+}
+
+.task__icon {
+  color: #fff;
+  cursor: pointer;
+}
+
+.task__content {
+  font-size: 16px;
+}
+
+.button {
+  border: none;
+
+  padding: 0 5px 5px 0;
+  font-size: 16px;
+  background: none;
+
+  justify-self: start;
+  align-self: start;
+}
+
+.button--winnie {
+  border-bottom: 2px solid #8e6e95;
+}
+
+.button--bob {
+  border-bottom: 2px solid #39a59c;
+}
+
+.button--thomas {
+  border-bottom: 2px solid #344759;
+}
+.button--george {
+  border-bottom: 2px solid #e8741e;
 }
