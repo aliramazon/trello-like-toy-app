@@ -4,7 +4,7 @@ import "./App.css";
 const data = {
   winnie: [
     {
-      task: "Learn redux",
+      task: "Learn redux and react",
       id: 1
     },
     {
